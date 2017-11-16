@@ -1,0 +1,27 @@
+{
+  "name": "ec-array",
+  "version": "0.1.0",
+  "description": "An array tools Kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --harmony --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tim1020/ec-array.git"
+  },
+  "keywords": [
+    "array",
+    "tools",
+	"utils"
+  ],
+  "author": "Tim <tim8670@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tim1020/ec-array/issues"
+  },
+  "homepage": "https://github.com/tim1020/ec-arrayr#readme",
+  "dependencies": {
+
+  }
+}
