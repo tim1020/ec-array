@@ -4,11 +4,12 @@ module.exports = ( arr ) => {
      if(typeof arr !='object' || !Array.isArray(arr)) return false;
      var result = {};
      for(let k in arr){
-        if(typeof arr[k] != 'string' && typeof arr[k] != 'number') return false;
-        if(arr[k] in result){
-            result[arr[k]] += 1;
+        let el = arr[k];
+        if(typeof el != 'string' && typeof el != 'number') return false;
+        if(el in result){
+            result[el] += 1;
         }else{
-            result[arr[k]] = 1;
+            result[el] = 1;
         }
      }
      return result;

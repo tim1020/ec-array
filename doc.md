@@ -1,4 +1,29 @@
 ec-array 函数列表
 -----------------
 
-## 
+## changeKeyCase
+## chunk
+## column
+## ​combine
+## ​countValues
+## count
+## ​fillkeys
+## ​fill
+## ​flip
+## ​keyExists
+## ​keys
+## ​merge
+## shuffle
+## range
+## ​rand
+## ​values
+## sum
+## splice
+## ​shift
+## unshift
+## push
+## pop
+## pad
+## product
+## reverse
+## slice

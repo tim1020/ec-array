@@ -3,9 +3,9 @@
 module.exports = ( keys_arr,val ) => {
      if(typeof keys_arr !='object' || !Array.isArray(keys_arr)) return false;
      var result = {};
-     for(let k in keys_arr){
-        if(typeof keys_arr[k] != 'string' && typeof keys_arr[k] != 'number') return false;
-        result[keys_arr[k]] = val;
+     for(let el of keys_arr){
+        if(typeof el != 'string' && typeof el != 'number') return false;
+        result[el] = val;
      }
      return result;
  }
