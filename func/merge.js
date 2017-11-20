@@ -2,13 +2,13 @@
 
 module.exports = ( arr, ...arrs ) => {
     if(typeof arr !='object' ) return false;
-    for(let k in arrs){
-        let el = arrs[k];
+    let result = arr;
+    for(let el of arrs){
         if(typeof el !='object' ) return false;
         for(let k in el){
-            if(Array.isArray(arr) && Array.isArray(el)) arr.push(el[k]);
-            else arr[k] = el[k];
+            if(Array.isArray(arr) && Array.isArray(el)) result.push(el[k]);
+            else result[k] = el[k];
         }
     }
-    return arr;
+    return result;
 }

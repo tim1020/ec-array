@@ -10,10 +10,16 @@ var
     combine       = require("./func/combine"),
     countValues   = require("./func/count_values"),
     count         = require("./func/count"),
+    diff          = require("./func/diff"),
+    diffKey       = require("./func/diff_key"),
+    diffVal       = require("./func/diff_val"),
     fillKeys      = require("./func/fill_keys"),
     fill          = require("./func/fill"),
     flip          = require("./func/flip"),
-    values        = require("./func/values"),
+    intersect     = require("./func/intersect"),
+    intersectKey  = require("./func/intersect_key"),
+    intersectVal  = require("./func/intersect_val"),
+    join          = require("./func/join"),
     keys          = require("./func/keys"),
     keyExists     = require("./func/key_exists"),
     merge         = require("./func/merge"),
@@ -29,37 +35,52 @@ var
     product       = require("./func/product"), 
     pad           = require("./func/pad"), 
     reverse       = require("./func/reverse"),
-    rand          = require("./func/rand")
-
-
+    rand          = require("./func/rand"),
+    search        = require("./func/search"),
+    sort          = require("./func/sort"),
+    split         = require("./func/split"),    
+    unique        = require("./func/unique"),
+    values        = require("./func/values")
+;
 //export
 var funcs = {
-   changeKeyCase,
-   chunk,
-   column,
-   combine,
-   countValues,
-   count,
-   fillKeys,
-   fill,
-   flip,
-   values,
-   keys,
-   keyExists,
-   merge,
-   range,
-   shuffle,
-   sum,
-   splice,
-   slice,
-   shift,
-   unshift,
-   push,
-   product,
-   pop,
-   pad,
-   reverse,
-   rand
+  changeKeyCase,
+  chunk,
+  column,
+  combine,
+  countValues,
+  count,
+  diff,
+  diffKey,
+  diffVal,
+  fillKeys,
+  fill,
+  flip,
+  intersect,
+  intersectKey,
+  intersectVal,
+  join,
+  keys,
+  keyExists,
+  merge,
+  range,
+  shuffle,
+  sum,
+  splice,
+  slice,
+  shift,
+  unshift,
+  push,
+  product,
+  pop,
+  pad,
+  reverse,
+  rand,
+  search,
+  sort,
+  split,
+  unique,
+  values
 };
 //export consts
 for(let k in _consts){
@@ -70,54 +91,41 @@ funcs.consts = _consts;
 module.exports = Object.freeze(funcs);
 
     
-
-    // array_​diff_​assoc
-    // array_​diff_​key
-    // array_​diff_​uassoc
-    // array_​diff_​ukey
-    // array_​diff
-    // array_​filter
+    // 
     // array_​intersect_​assoc
     // array_​intersect_​key
-    // array_​intersect_​uassoc
-    // array_​intersect_​ukey
     // array_​intersect
+    // array_​filter 
     // array_​map
     // array_​merge_​recursive
     // array_​multisort
     // array_​reduce
     // array_​replace_​recursive
     // array_​replace
-    // array_​search
-    // array_​udiff_​assoc
-    // array_​udiff_​uassoc
-    // array_​udiff
-    // array_​uintersect_​assoc
-    // array_​uintersect_​uassoc
-    // array_​uintersect
-    // array_​unique
     // array_​walk_​recursive
     // array_​walk
-    // arsort
-    // asort
+
+   
+
     // compact
     // current
     // each
     // end
-    // extract
-    // in_​array
     // key
-    // krsort
-    // ksort
     // list
-    // natcasesort
-    // natsort
     // next
     // pos
     // prev
     // reset
-    // rsort
-    // sort
-    // uasort
-    // uksort
-    // usort
+    // extract
+    // 
+    // array_​diff_​uassoc
+    // array_​diff_​ukey
+    // array_​udiff_​assoc
+    // array_​udiff_​uassoc
+    // array_​udiff
+    // array_​intersect_​uassoc
+    // array_​intersect_​ukey
+    // array_​uintersect_​assoc
+    // array_​uintersect_​uassoc
+    // array_​uintersect
