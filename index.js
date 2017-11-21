@@ -16,6 +16,7 @@ var
     fillKeys      = require("./func/fill_keys"),
     fill          = require("./func/fill"),
     flip          = require("./func/flip"),
+    filter        = require("./func/filter"),
     intersect     = require("./func/intersect"),
     intersectKey  = require("./func/intersect_key"),
     intersectVal  = require("./func/intersect_val"),
@@ -36,11 +37,13 @@ var
     pad           = require("./func/pad"), 
     reverse       = require("./func/reverse"),
     rand          = require("./func/rand"),
+    replace       = require("./func/replace"),
     search        = require("./func/search"),
     sort          = require("./func/sort"),
     split         = require("./func/split"),    
     unique        = require("./func/unique"),
-    values        = require("./func/values")
+    values        = require("./func/values"),
+    walk          = require("./func/walk")
 ;
 //export
 var funcs = {
@@ -56,6 +59,7 @@ var funcs = {
   fillKeys,
   fill,
   flip,
+  filter,
   intersect,
   intersectKey,
   intersectVal,
@@ -76,11 +80,13 @@ var funcs = {
   pad,
   reverse,
   rand,
+  replace,
   search,
   sort,
   split,
   unique,
-  values
+  values,
+  walk
 };
 //export consts
 for(let k in _consts){
@@ -90,42 +96,26 @@ funcs.consts = _consts;
 
 module.exports = Object.freeze(funcs);
 
-    
-    // 
-    // array_​intersect_​assoc
-    // array_​intersect_​key
-    // array_​intersect
-    // array_​filter 
-    // array_​map
-    // array_​merge_​recursive
-    // array_​multisort
-    // array_​reduce
-    // array_​replace_​recursive
-    // array_​replace
-    // array_​walk_​recursive
-    // array_​walk
-
    
-
-    // compact
-    // current
-    // each
-    // end
-    // key
-    // list
-    // next
-    // pos
-    // prev
-    // reset
-    // extract
-    // 
-    // array_​diff_​uassoc
-    // array_​diff_​ukey
-    // array_​udiff_​assoc
-    // array_​udiff_​uassoc
-    // array_​udiff
-    // array_​intersect_​uassoc
-    // array_​intersect_​ukey
-    // array_​uintersect_​assoc
-    // array_​uintersect_​uassoc
-    // array_​uintersect
+// compact
+// current
+// each
+// end
+// key
+// list
+// next
+// pos
+// prev
+// reset
+// extract
+// 
+// array_​diff_​uassoc
+// array_​diff_​ukey
+// array_​udiff_​assoc
+// array_​udiff_​uassoc
+// array_​udiff
+// array_​intersect_​uassoc
+// array_​intersect_​ukey
+// array_​uintersect_​assoc
+// array_​uintersect_​uassoc
+// array_​uintersect

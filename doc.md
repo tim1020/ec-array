@@ -13,6 +13,7 @@ ec-array 函数列表
 ## ​fill
 ## ​fillkeys
 ## ​flip
+## filter
 ## intersect
 ## intersectKey
 ## intersectVal
@@ -27,6 +28,7 @@ ec-array 函数列表
 ## ​rand
 ## range
 ## reverse
+## replace
 ## search
 ## ​shift
 ## shuffle
