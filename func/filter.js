@@ -4,7 +4,7 @@
 module.exports = ( arr, callback ) => {
     if(typeof arr !='object' || typeof callback != 'function') return false;
     if(callback.length < 1 || callback.length > 2) return false;
-    let result = Array.isArray(arr) ? arr.slice(0) : arr;
+    let result = Array.isArray(arr) ? arr.slice(0) : Object.assign({}, arr);;
     let i = 0;
     for(let k in arr){
         let keep = true;

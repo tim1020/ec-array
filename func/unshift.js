@@ -3,5 +3,6 @@
 
 module.exports = ( arr , ...vals) => {
     if(typeof arr !='object' || !Array.isArray(arr) || vals.length <1) return false;
-    return arr.unshift(...vals);
+    arr.unshift(...vals);
+    return arr;
 }

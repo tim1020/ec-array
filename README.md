@@ -16,6 +16,7 @@ php的数组有两种方式：
 
 ```
 npm install ec-array --save
+npm test
 ```
 
 or download from github  [https://github.com/tim1020/ec-array]

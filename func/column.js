@@ -11,7 +11,7 @@ module.exports = ( arr , column_key , index_key = null ) => {
         }
         if(index_key != null && index_key in el){
             result[el[index_key]] = val;
-        }else{
+        }else if(val != null){
             result.push(val);
         }
     }

@@ -3,7 +3,7 @@
 
 module.exports = ( arr, ...arrs ) => {
     if(typeof arr !='object') return false;
-    let result = Array.isArray(arr) ? arr.slice(0) : arr;
+    let result = Array.isArray(arr) ? arr.slice(0) : Object.assign({}, arr);
     let i = 0;
     for(let k in arr){
         for(let el of arrs){
